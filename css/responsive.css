@@ -1,0 +1,178 @@
+@media (max-width: 767px){
+
+    header .logo{
+        width: 60%;
+        /* height: 60%; */
+    }
+    
+/* ***************************************************** */
+
+    .goal-boxs,.performance,.two-columns > div ,.statistics{
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .goal .box, .performance > div, .two-columns .item{
+        width: 100%;
+    }
+
+/* *************************************************** */
+
+    .expertise{
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+/* *************************************************** */
+
+    .goto-top{
+        display: none;
+    }
+
+/* *************************************************** */
+
+}
+
+@media (min-width: 768px) and (max-width: 1023px){
+
+    .expertise{
+        grid-template-columns: repeat(2,1fr);
+        gap: 20px;
+    }
+
+}
+
+@media (max-width: 1023px){
+
+
+    /* ********  contact us ******** */
+    .header-top ul{
+        display: none;
+    }
+
+    .header-top .contact-us{
+        margin: 5px auto;
+    }
+
+    /* ********  main header ******** */
+
+    header{
+        height: 100px;
+        position: relative;
+    }
+
+    header nav{
+        flex-direction: row-reverse;
+    }
+
+    header nav ul{
+        position: fixed;
+        top: 0;
+        right: -200%;
+        background-color: white;
+        color: black;
+        flex-direction: column;
+        width: 300px;
+        height: 100vh;
+        padding: 100px 0;
+
+        transition: 1s;
+    }
+
+    header nav ul a{
+        font-size: 17px;
+        font-family: headingsFont;
+
+        line-height: 40px;
+        padding: 0 20px;
+        text-align: left;
+    }
+
+    header nav ul a:hover{
+        background-color: #f3f3f3;
+    }
+
+    /* **************  nav ol ************* */
+
+    header ol{
+        width: 100%;
+        position: relative;
+        top: 0;
+        display: block;
+    }
+    
+    header ol li a{ 
+        padding: 0 40px;
+    }
+
+    /* ********* header searchbox ********* */
+
+    header .search-box{
+        right: 20px;
+    }
+
+
+    /* ***********  burger menu *********** */
+
+    header label[class="label-menu"]{
+        display: block;
+    }
+
+    header input[id="menu"]:checked ~ ul{
+        top: 0;
+        right: 0;
+    }
+
+    .label-menu span{
+        transition: transform 0.6s , background-color 0.8s , opacity 0s ;     
+    }
+
+    .label-menu span:first-child{
+        transform-origin: 50% 50%;
+    }
+
+    .label-menu span:last-child{
+        transform-origin: 50% 50% ;
+    }
+
+
+    header input[id="menu"]:checked + .label-menu span:first-child{
+        transform: translateY(7px) rotate(225deg);
+        background-color: black;
+    }
+
+    header input[id="menu"]:checked + .label-menu span:nth-child(2){
+        opacity: 0;
+    }
+
+    header input[id="menu"]:checked + .label-menu span:last-child{
+        transform: translateY(-7px) rotate(135deg);
+        background-color: black;
+    }
+
+    /* ********************************************** */
+
+    .expertise-detail{
+        grid-template-columns: 1fr;
+    }
+    .expertise-detail .box2,.expertise-detail .box3,.expertise-detail .box6{
+        grid-column: 1/2;    
+    }
+
+    footer .contact-icons{
+        gap: 5px;
+    }
+    
+    footer i{
+        font-size: 12px;
+        padding: 12px;
+    }
+
+    
+    /* *********************** All of them without border *********************** */
+
+    header nav ul a, header nav ul .b-border,header nav ul a span,header nav ul a:hover, header ol, ol li a{
+        border: none;
+    }
+
+}

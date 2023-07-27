@@ -1,0 +1,62 @@
+.goal{
+    background: linear-gradient(rgba(8, 74, 121, 0.5),rgba(8, 74, 121, 0.5)),
+                url("../images/hero2-bw.png") no-repeat center center / cover;
+}
+
+.goal h1, .goal > div > p{
+    color: white;
+}
+
+.goal .box{
+    width: 33.33%;
+    padding: 80px 30px;
+}
+
+/* ********************************************************* */
+
+.our-performance{
+    position: relative;                     
+}
+
+.performance > div{
+    width: 30%;
+}
+
+.our-performance img{
+    max-width: 100%;
+    border-radius: 4px;
+}
+
+/* ************************************************** */
+
+.expertise{
+    grid-template-columns: repeat(3,1fr);
+    gap: 50px;
+}
+
+/* .expertise-box style is in the style.css file  */
+
+
+/* ************************************************** */
+
+.statistics{
+    justify-content: space-around;
+}
+
+.statistics h4{
+    font-family: paragraphFont;
+    font-weight: 500;
+    margin: 0;
+}
+
+.statistics p{
+    margin: 0;
+}
+
+.statistics h4 span{
+    color: #85a6be;
+}
+
+
+
+
